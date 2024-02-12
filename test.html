@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Show/Hide</title>
+  <style>
+    .dropdown {
+      display: none;
+      margin-left:20px;
+    }
+    .card
+    {
+      border: 1px solid rgb(182, 196, 196);
+      margin-top:20px;
+      width: 350px;
+      /* margin-left:700px; */
+    }
+    #one
+    {
+      /* margin-top:20px; */
+      /* margin-left:30px; */
+      margin-bottom:20px;
+    }
+    input
+    {
+      background-color:rgb(214, 19, 19);
+    }
+    #offer
+    {
+      border: 1px solid rgb(234, 84, 109);
+      background-color:rgb(236, 53, 83);
+      color: azure;
+    }
+    select
+    {
+      width:100px;
+      margin-top:6px;
+    }
+    .free
+    {
+      color:rgb(236, 53, 83);
+    }
+    
+
+  .style1 {
+	color: #FFFFFF
+}
+#top_offer
+{
+  background-color:rgb(234, 84, 109);
+  color:white;
+  margin-bottom:30px;
+}
+#footer
+{
+  color: darkgray;
+}
+#total
+{
+  margin-left:150px;
+}
+#button
+{
+  width:350px;
+  height:40px;
+  border-radius:5px;
+  background-color:rgb(234, 84, 109);
+  color: #FFFFFF;
+  border: #FFFFFF;
+  margin-top:20px;
+}
+#footer
+{
+  margin-left:200px;
+}
+.top{
+   
+      /* height:7px; */
+      width:200px;
+      border-radius:20%;
+      /* margin-left:15%; */
+      display: inline;
+      background-color:rgba(255, 0, 43, 0.502);
+    
+}
+.over_all
+{
+  margin-left:700px;
+  margin-top:100px;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="over_all">
+<hr class="top">YAY !t's BOGO<hr class="top">
+<div id="card" class="card">
+  <div align="right" class="top_offer"><span id="top_offer">&nbsp; &nbsp;MOST POPULAR &nbsp;</span></div>
+<div id="one">
+     <div align="center"><strong></strong><strong></strong></div>
+     <strong>
+     <label>
+     </label>
+     </strong>
+    <label>
+    <div align="center"><strong>
+      <input type="radio" class="raj" name="box" onClick="toggleDropdown(1)"> 
+      1 Unit&nbsp;&nbsp; <span id="offer">&nbsp;10% off&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>$18.00 USD</span>
+      
+        </strong></div>
+    </label>  
+     </div>
+  <div id="dropdown1" class="dropdown">
+    <table>
+          <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th>Size</th>
+                <th>Colour</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td>#1</td>
+                <td>
+                  <select>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option value="black">Black</option>
+                    <option value="Red">Red</option>
+                    <option value="blue">Blue</option>
+                  </select>
+                </td>
+              </tr>
+              <tr id="select_2">
+                <td>#2</td>
+                <td>
+                  <select>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option value="black">Black</option>
+                    <option value="Red">Red</option>
+                    <option value="blue">Blue</option>
+                  </select>
+                </td>
+              </tr>
+          </tbody>
+  </table>
+  <br>
+  </div>
+</div>
+
+<div id="card" class="card">
+  <div align="right"><span id="top_offer">&nbsp; &nbsp;MOST POPULAR &nbsp;</span></div>
+  <div id="one">
+    <strong><label>
+    <input type="radio" name="box" onClick="toggleDropdown(2)"> Box 2 <span id="offer">&nbsp;20% off&nbsp;&nbsp;</span>
+  </label></strong>
+  </div>
+  <div id="dropdown2" class="dropdown">
+    <table>
+      <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th>Size</th>
+            <th>Colour</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td>#2</td>
+            <td>
+              <select>
+                <option value="option1">small-xx</option>
+                <option value="option2">small-x</option>
+                <option value="option3">small</option>
+              </select>
+            </td>
+            <td>
+              <select>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>#1</td>
+            <td>
+              <select>
+                <option value="option1">small-xx</option>
+                <option value="option2">small-x</option>
+                <option value="option3">small</option>
+              </select>
+            </td>
+            <td>
+              <select>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+            </td>
+          </tr>
+      </tbody>
+</table>
+<br>
+  </div>
+</div>
+<div id="card" class="card">
+  <div align="right"><span id="top_offer">&nbsp; &nbsp;MOST POPULAR &nbsp;</span></div>
+<div id="one">
+  <strong><label>
+    <input type="radio" name="box" onClick="toggleDropdown(3)"> Box 3 <span id="offer">&nbsp;30% off&nbsp;&nbsp;</span>
+  </label></strong>
+  </div>
+  <div id="dropdown3" class="dropdown">
+    <table>
+      <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th>Size</th>
+            <th>Colour</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td>#2</td>
+            <td>
+              <select>
+                <option value="option1">small-xx</option>
+                <option value="option2">small-x</option>
+                <option value="option3">small</option>
+              </select>
+            </td>
+            <td>
+              <select>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>#1</td>
+            <td>
+              <select>
+                <option value="option1">small-xx</option>
+                <option value="option2">small-x</option>
+                <option value="option3">small</option>
+              </select>
+            </td>
+            <td>
+              <select>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+            </td>
+          </tr>
+      </tbody>
+</table>
+<br>
+</div>
+</div>
+<br>
+<span class="free">Fress Delivery</span> <span id="total">Total:</span>
+<br>
+<button type="button" id="button">+ &nbsp; Add  To Cart</button>
+<br>
+<span id="footer">@Powered by Pumper</span>
+</div>
+<script>
+  function toggleDropdown(boxNumber) {
+    // Hide all dropdowns
+    for (let i = 1; i <= 3; i++) {
+      const dropdown = document.getElementById(`dropdown${i}`);
+      dropdown.style.display = 'none';
+    }
+
+    // Show the selected dropdown
+    const selectedDropdown = document.getElementById(`dropdown${boxNumber}`);
+    selectedDropdown.style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
